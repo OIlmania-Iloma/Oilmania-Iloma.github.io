@@ -1,0 +1,238 @@
+body{background-image:"";
+
+    background-color:hsl(100, 85%, 8%);
+};
+div{display:inline;
+   background-color: black; 
+}
+hr.u{background-color: rgb(0, 0, 0);
+    height:10px;border-width:3;
+}
+#navh3, #navh1{
+    position: relative;
+    top: 150px;
+}
+#navh2i{
+    height:190px;
+    text-align: center;
+}
+i{
+    margin:0px 25px ;
+}
+input, button{
+    border-radius:10px;
+    background-color: cornflowerblue;
+}
+#navH{
+    display: block;
+}
+#hd2{background-color: hsl(0, 0%, 0%);
+    display:flex;
+    border-radius: 12px;
+}
+#nava{
+    margin:0px 50px;
+}
+#hd1{
+    width: auto;
+}
+#hd2 > li {
+    margin:10px 13px;
+    list-style: none;
+}
+#nava{
+    text-decoration: none;
+}
+#navhh{margin: 0px 155px;
+    background-color: blanchedalmond;
+    display:inline-flex;
+    justify-content: space-evenly;
+    border-radius:10px
+}
+#navh1, #navh2, #navh3 {
+    margin: 10px 30px;
+}
+#hd2 > a{
+    text-decoration: none;
+}
+img.pic{
+    width:250px;
+}
+i a:hover{
+    background-color: rgb(60, 23, 130);
+
+}
+#nava a:active{
+    background-color: blanchedalmond;
+    border:12px;
+	border-radius:12px;
+}
+#navli a:hover{
+    background-color: hsl(36, 100%, 90%);
+}
+#div1{  margin:0px 10px;
+      display: inline-flex;
+}
+#div1a, #div1b, #div1c{
+    margin: 0px 19px;
+}
+#bk1i{
+    width:600px;
+}
+#div1c{
+    display: block;
+}
+#div1c >a {
+        font-weight:bolder ;
+        font-size:13px;
+        color: cornflowerblue;
+}
+#div1c > h3{
+    font-weight:bold ;
+        font-size: 35px;
+        color: hsla(219, 79%, 66%, 0.5);
+        
+}
+#pil a:hover{
+    background-color: blanchedalmond;
+    border:19px;
+	border-radius:12px;
+}
+#rowd{display:inline-flex;
+    margin:10px 29px;
+}
+#rwdc{
+    margin:10px 39px;
+    color: cornflowerblue;
+}
+#rwdc a:hover{
+    background-color: blanchedalmond;
+    border:19px;
+	border-radius:12px;
+}
+div.vision{
+   background-color:black;
+   opacity: 1.5;
+}
+.cp{
+    color: black;
+}
+.cim {
+    width: auto;
+    height: 225px;
+    max-height: 225px;
+    }
+    #con2{
+        display: inline-flex;
+        margin:0px 18px;
+        }
+        #con2a{ height: 70%;
+            width: auto;
+            background-color: cornflowerblue;
+        }
+        #con2b{
+            width:34%;
+            margin:3px 5px;
+        }
+        #con2bi{
+            height:300px;
+            width:auto;
+        }
+        #bk1{
+            height:450px;
+            width:auto;
+        }
+    #con2chd{
+        display:block;
+        margin:3px 10px ;
+    }
+    #h4{ letter-spacing:2px;
+        font-weight:thin;
+        text-align: center;
+    }
+    #try{display: inline-flex;
+        margin:0px 19px;
+    }
+    p{ letter-spacing:2px;
+       font-weight:thin;
+    }
+    #trychldi{
+      width: auto;
+      height: 300px;
+      text-align: center;
+      margin: 0px 19px;
+    }
+    #trychld{
+        margin: 0px 21px;
+    }
+    .table{
+        height: 90%;
+    }
+    th, td{
+        letter-spacing:2px;
+        font-weight:thin;
+        font-size: 25px;
+        color: cornflowerblue;
+        margin:0px 17px;   
+    }
+    #ftC{
+        background-color: blanchedalmond;;
+        display: flex;
+        border-radius:10px;
+        margin: 0px 14px;
+    }
+    #ftC1{
+        flex: 1; 
+    }
+    #ftC2{
+       flex: 1; 
+    }
+    #ftC2a{
+        display: block;
+    }
+    #ftC2b{
+        position: relative;
+        top:50px;
+        left:150px;
+    }
+    #ftC3{
+        flex:1
+    }
+    #fti{
+        padding: 12px 19px;
+        width:auto;
+        height: 100px;
+    }
+    #fta{
+        font-weight:thin ;
+        font-size:13px; 
+    }
+  
+    #con2b > p{
+        font-weight:bold ;
+        font-size: 25px;
+        color: cornflowerblue;
+    }
+    #lii{ margin: 0px 18px;
+        font-weight:thin ;
+        font-size:13px;
+        color: cornflowerblue;
+    }
+    #li1{letter-spacing:1px;
+        margin: 0px 18px;
+        font-weight:thin ;
+        font-size:13px;
+        color: cornflowerblue; 
+        line-height:rem;
+    }
+    em{
+        letter-spacing:1px;
+        font-weight:thin;
+    }
+    #try >p, a {
+        text-align: center;
+        font-weight:thin ;
+        font-size: 15px;
+        color: rgb(100, 149, 237);
+    }
+   
