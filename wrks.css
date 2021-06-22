@@ -141,6 +141,12 @@ a{
     height:auto;
 }
 .div3ii > p{
+    color: cornflowerblue;
+    font-weight: 700;
+    line-height:20px;
+}
+#li1{
+    color: cornflowerblue;
     font-weight: 700;
     line-height:20px;
 }
@@ -166,7 +172,9 @@ img#div3i{
 th,tr,td{
    padding: 20px;
    font-weight: 700;
-    line-height:20px;}
+    line-height:20px;
+    color: cornflowerblue;
+}
 footer{
     background-color: blanchedalmond;
     display: flex;
