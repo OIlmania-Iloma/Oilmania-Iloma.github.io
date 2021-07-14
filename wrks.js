@@ -1,4 +1,4 @@
-const menu = document.querySelector('.menu');
+/*const menu = document.querySelector('.menu');
 const toggle = document.querySelector('.toggle')
 let toggleMenu = () => {
     if (menu.classList.contains("active")) {
@@ -10,7 +10,7 @@ let toggleMenu = () => {
     }
     
 }
-toggle.addEventListener("click", toggleMenu, false);
+//toggle.addEventListener("click", toggleMenu, false);
 
 const items = document.querySelectorAll(".li");
 function toggleli(){
@@ -43,3 +43,39 @@ function closeSubMenu (e){
 
 }
 document.addEventListener('click', closeSubMenu, false)
+
+let rwd = document.querySelectorAll("#rwdc");
+ let chng = () => {
+    let rwd = document.querySelectorAll("#rwdc");
+    return 
+    for (i=0; i < rwd.length; i++){
+        rwd[i].addEventListener('mouseover', chng, true);
+    }
+ }*/
+ let main = document.querySelectorAll('#rwdc');
+ for (let i = 0; i <main.length; i++) {
+     const element = main[i];
+     element.classList.add('hvr-grow');
+ }
+console.log(main)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
