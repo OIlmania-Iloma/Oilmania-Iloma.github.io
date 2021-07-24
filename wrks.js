@@ -52,12 +52,17 @@ let rwd = document.querySelectorAll("#rwdc");
         rwd[i].addEventListener('mouseover', chng, true);
     }
  }*/
- let main = document.querySelectorAll('#rwdc');
+ let main = document.querySelectorAll('#icon');
  for (let i = 0; i <main.length; i++) {
      const element = main[i];
      element.classList.add('hvr-grow');
  }
 console.log(main)
+let newsA = document.querySelectorAll("#an");
+for (let i = 0; i <newsA.length; i++) {
+    const element = newsA[i];
+    element.classList.add('text-dark');
+}
  
 
 
