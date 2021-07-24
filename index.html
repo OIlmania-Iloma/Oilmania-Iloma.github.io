@@ -3,253 +3,358 @@
     <head lang="en">
         <meta charset="utf-8" encoding = "1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <title>
             work
         </title>
     </head>
     <body> 
-       <nav>
-        <ul id="menu" class="menu">
-          <div >
-              <img src="wrkimgs\nsbmb-logo-300x298.png" class="logo" alt="logo">
-          </div>
-          <li class="li">
-            <a href="#">About us</a>
-          </li>
-          <li class="li">
-            <a href="#">Publication</a>
-          </li>
-          <li class="li has-submenu" onclick="toggleli()">
-            <a id="nava" tabindex="0">Membership</a>
-            <ul class="submenu">
-              <li class="subL">
-                <a href="#">Fellow</a>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href=""><img src="C:\nsbmb\wrkimgs\nsbmb-logo-300x298.png" alt="logo" height="55"width="70"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="subL">
-                <a href="#">Associate</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Membership
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">New</a></li>
+                  <li><a class="dropdown-item" href="#">Fellow</a></li>
+                  <!--<li><hr class="dropdown-divider"></li>-->
+                  <li><a class="dropdown-item" href="#">Associate</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Publications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>-->
             </ul>
-          </li>
-          <li class="li">  
-            <a href="#">Announcments</a>
-        </li>
-          <li class="li">
-            <a href="#">Career</a>
-          </li>
-          <li class="li">
-            <a href="#">COVID-19</a>
-          </li>
-          <li class="li button">
-            <a href="#">log in</a>
-          </li>           
-          <li class="toggle" >
-            <a href="#">
-              <i class="fas fa-bars"  onclick="toggleMenu()"></i>
-            </a>
-          </li>
-        </ul>
-       </nav>
-             <main class="container">
-            <div class="div1">
-                
-                <img src="C:\nsbmb\wrkimgs\img5.png" alt="" class="pgIi">
-                <img src="C:\nsbmb\wrkimgs\img3.jpg" alt="" class="pgIii">
-                
-                <div class="div1b">
-                <h3>Biochemistry in news</h3>
-                <p><a href="#">clinical cases of Ebola cured in Nasarwa state</a></p>
-                <p><a href="#">Insulin:The remedy of THC Inhibition</a></p>
-                <p><a href="#">President Biden gives approval for use of Nurogenics</a></p>
-                <p><a href="#">Africa center for research to build more colleges </a></p>
-                <p><a href="#">Governor Wike to donate $10bn to Research in UST</a></p>
-              </div>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <main class="container">
+        <section class="row mb-4" id="conference">
+          <div id="carouselExampleCaptions" class="col-12 col-sm-6 carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="div2">
-              <h2>Important Conference Date</h2>
-                <div id="rwdc">
-                  <h3>
-                    6<sup>th</sup> May 2021 
-                  </h3>
-                  <p>Arrival and Registration</p>
-                </div>
-                <div id="rwdc">
-                  <h3>
-                    7<sup>th</sup>May 2021
-                  </h3>
-                  <p>Pre-Conference Worship</p>
-                </div>
-                <div id="rwdc">
-                  <h3>
-                    8<sup>th</sup> May 2021
-                  </h3>
-                  <p>Opening eremony and plenary section</p>
-                </div>
-                <div id="rwdc">
-                  <h3>
-                    9<sup>th</sup> May 2021
-                  </h3>
-                  <p>Annual General Meeting</p>
-                </div>
-                <div id="rwdc">
-                  <h3>
-                    10<sup>th</sup> May 2021
-                  </h3>
-                  <p>Depature</p>
-               
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="C:\nsbmb\wrkimgs\img3.jpg" class="d-block w-100" alt="...">
               </div>
+              <div class="carousel-item">
+                <img src="C:\nsbmb\wrkimgs\img2.jpg" class="d-block w-100 img-responsive"  alt="...">
+              </div>
+              <!--<div class="carousel-item">
+                <img src="C:\nsbmb\wrkimgs\excos.jpg" class="pglii" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>-->
             </div>
-            <div class="div3">
-                <div class="div3i">
-                  <h4>Our History</h4>
-                  <em>
-                    The Nigerian Institute of Medical Research (NIMR) 
-                    was established through 
-                    the National Science and Technology Act of 1977, 
-                    the Medical Research Council of Nigeria was renamed the National Institute of Medical Research.
-                     This name was further changed to the Nigerian Institute of 
-                    Medical Research (NIMR) in 1993.
-                  </em>
-                  <h4>Our Mission</h4>
-                  <em>
-                    The Nigerian Institute of Medical Research (NIMR) 
-                    was established through 
-                    the National Science and Technology Act of 1977, 
-                    the Medical Research Council of Nigeria was renamed the National Institute of Medical Research.
-                     This name was further changed to the Nigerian Institute of 
-                    Medical Research (NIMR) in 1993.
-                  </em>
-                  <h4>our Vision</h4>
-                  <em>
-                    The Nigerian Institute of Medical Research (NIMR) 
-                    was established through 
-                    the National Science and Technology Act of 1977, 
-                    the Medical Research Council of Nigeria was renamed the National Institute of Medical Research.
-                     This name was further changed to the Nigerian Institute of 
-                    Medical Research (NIMR) in 1993.
-                  </em>
-                </div>
-                <div class="div3ii">
-                    <img src="wrkimgs\tryimg8.jpg" alt="sir" id="div3i">
-                    <p>Dr. Wy Combin Lee (Co-founder of NSBMB '09)</p>
-                </div>
-            </div>
-            <div id="try">
-              <div id="trychld">
-                <img src="wrkimgs\tryimg6.jpg" alt="2" id="trychldi">
-                <p id="trp">
-                  <a href="#" id="lii">Dr. Glenda Gilapsy, dives into the Biochemistry of COVID-19</a>
-                </p>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="row">
+              <h2 class="text-uppercase mb-4 font-weight-bold text-center" id="dt">Important Conference Date</h2>
+              <div class="col-sm-6 col-md-4 text-center" id="icon">
+                <h3>
+                  6<sup>th</sup> May 2021 
+                </h3>
+                <p>Lorem ipsum dolor sit amet</p>
               </div>
-              <div id="trychld">
-                <img src="wrkimgs\tryimg7.jpg" alt="7" id="trychldi">
-                <p id="li1">
-                 the National Science and Technology Act of 1977, 
-                 the Medical Research Council of Nigeria was renamed the National Institute of M                 This name was further changed to the Nigerian Institute of 
-                </p>
+              <div class="col-sm-6 col-md-4 text-center" id="icon">
+                <h3>
+                  7<sup>th</sup>May 2021
+                </h3>
+                <p>Lorem ipsum dolor sit amet</p>
               </div>
-              <div id="trychld">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>
-                        #
-                      </th>
-                      <th>
-                        country
-                      </th>
-                      <th>
-                        cases
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        1
-                      </td>
-                      <td>
-                        Chaingo
-                      </td>
-                      <td>
-                        457
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        2
-                      </td>
-                      <td>
-                        Dunmay
-                      </td>
-                      <td>
-                        322
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        3
-                      </td>
-                      <td>
-                        Ftuniu
-                      </td>
-                      <td>
-                        245
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        43
-                      </td>
-                      <td>
-                        Gyunmi
-                      </td>
-                      <td>
-                        127
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        5
-                      </td>
-                      <td>
-                        Asyutin
-                      </td>
-                      <td></td> 
-                    </tr>
-                  </tbody>
-                </table> 
+              <div class="col-sm-6 col-md-4 text-center" id="icon">
+                <h3>
+                  8<sup>th</sup> May 2021
+                </h3>
+                <p>Lorem ipsum dolor sit amet</p>
               </div>
-             </div>
-            <footer>
+              <div class="col-sm-6 col-md-6 text-center" id="icon">
+                <h3>
+                  9<sup>th</sup> May 2021
+                </h3>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="col-sm-6 col-md-6 text-center" id="icon">
+                <h3>
+                  10<sup>th</sup> May 2021
+                </h3>
+                <p>Lorem ipsum dolor sit amet</p>
              
-                <div id="ftC1">
-                  <img src="wrkimgs\nsbmb-logo-300x298.png" alt="fti" id="fti">
-                </div>
-                <div id="ftC2">
-                  <div id="ftC2a">
-                    <a href="#" id="fta">Resources</a>
-                    <a href="#" id="fta">Location</a>
-                  </div>
-                  <div id="ftC2b">
-                   <p> NSBMB 2021</p>
-                  </div>
-                </div>
-                <div id="ftC3">
-                  <div>
-                    <a href="#">Communique</a>
-                    <a href="#">Alumini</a>
-                  </div>
-                  <div>Oilmania</div>
-                  <div class="icons">
-                    <span><i class="fas fa-phone"></i></span>
-                    <span><i class="fas fa-envelope"></i></span>
-                    <span><i class="fab fa-facebook"></i></span>
-                    <span><i class="fab fa-twitter"></i></span>
-                  </div>
-                </div>
               
-            </footer>
-             </main>
+              </div>
+            </div>
+           </div>
+          </section>
+           <section class="row mb-4" id="welcome">
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-2 text-center" id="mission">
+                <h3 class="text-uppercase mb-4 font-weight-bold">Our Mission</h3>
+              <p>
+                Loremscing elit, sed do eiusmodderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                Loremscing elit, sed do eiusmodderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-2 text-center" id="vision">
+              <h3 class="text-uppercase mb-4 font-weight-bold">Our Vision</h3>
+            <p>
+              Loremscing elit, sed do eiusmodderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+              Loremscing elit, sed do eiusmodderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mt-2 text-center" id="values">
+                <h3 class="text-uppercase mb-4 font-weight-bold">our Values</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipd do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea csilaborum
+                Lorem ipsum dolor sit amet, consectetur adipd do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea csilaborum
+              </p>
+            </div>             
+          </section>
+        <section class="row mb-4" id="journals">
+          <h3 class="text-left jor">JOURNALS</h3>
+          <div class="col-lg-3 col-sm-4 col-6 text-center p-2">
+            <div class="journal-title">
+              <div class="journal-mage">
+                <a href="#">
+                  <img src="C:\nsbmb\wrkimgs\tetx3.jpg" alt="#" width="100%" height="auto" class=" cc responsive-image">
+                </a>
+              </div>
+            </div>
+            <div class="journal-description">
+              <em>News book</em>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 text-center p-2">
+            <div class="journal-title">
+              <div class="journal-mage">
+                <a href="#">
+                  <img class=" cc responsive-image" src="C:\nsbmb\wrkimgs\text21.jpg" alt="#" width="100%" height="auto" class="responsive-image">
+                </a>
+              </div>
+            </div>
+            <div class="journal-description">
+              <em>News book</em>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 text-center p-2">
+            <div class="journal-title">
+              <div class="journal-mage">
+                <a href="#">
+                  <img class=" cc responsive-image" src="C:\nsbmb\wrkimgs\text.jpg" alt="#" width="100%" height="auto">
+                </a>
+              </div>
+            </div>
+            <div class="journal-description">
+              <em>News book</em>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 text-center p-2 ">
+            <div class="journal-title">
+              <div class="journal-mage">
+                <a href="#">
+                  <img class=" cc responsive-image" src="C:\nsbmb\wrkimgs\text21.jpg" alt="#" width="100%" height="auto">
+                </a>
+              </div>
+            </div>
+            <div class="journal-description">
+              <em>News book</em>
+            </div>
+          </div>
+        </section>
+        <section class="row news-sec mb-4" id="news">
+          <h2 class="text-left" >Biochemistry and Covid-19  news</h2>
+             <div class="col-sm-6 col-lg-4">
+            <a href="#">clinical cases of Ebola cured in Nasarwa state</a>
+            <a href="#">Insulin:The remedy of THC Inhibition</a>
+            <a href="#">President Biden gives approval for use of Nurogenics</a>
+            <a href="#">Africa center for research to build more colleges </a>
+            <a href="#">Governor Wike to donate $10bn to Research in UST</a>
+            <a href="#">Insulin:The remedy of THC Inhibition</a>
+            <a href="#">President Biden gives approval for use of Nurogenics</a>
+            <a href="#">Africa center for research to build more colleges </a>
+            <a href="#">Governor Wike to donate $10bn to Research in UST</a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <img src="wrkimgs\tryimg7.jpg" alt="7" width="270" height="154" class="img-responsive">
+            <p>
+              ommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est la
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-4">
+            <h3 class="text-center">Covid stats</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="text-uppercase mb-4 font-weight-medium bg-dark text-white">
+                    #
+                  </th>
+                  <th class="text-uppercase mb-4 font-weight-medium bg-dark text-white">
+                    country
+                  </th>
+                  <th class="text-uppercase mb-4 font-weight-medium bg-dark text-white">
+                    cases
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    1
+                  </td>
+                  <td class="text-dark">
+                    Chaingo
+                  </td>
+                  <td>
+                    457
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    2
+                  </td>
+                  <td>
+                    Dunmay
+                  </td>
+                  <td>
+                    322
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    3
+                  </td>
+                  <td>
+                    Ftuniu
+                  </td>
+                  <td>
+                    245
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    43
+                  </td>
+                  <td>
+                    Gyunmi
+                  </td>
+                  <td>
+                    127
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    5
+                  </td>
+                  <td>
+                    Asyutin
+                  </td>
+                  <td></td> 
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+        </section>
+         <section class="row mb-4" id="fellowship">
+           <h2>Fellowship</h2>
+            <div class="col-sm-4 col-md-4">
+              <img src="wrkimgs\tryimg8.jpg"gs alt="#" class="responsive-image ig">
+              <p>
+                ommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est la
+               </p>              
+            </div>
+              <div class="col-sm-4 col-md-4">
+                <img src="C:\nsbmb\wrkimgs\tryimg3.jpg" alt="" class="responsive-image ig">
+                <p>
+                 ommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est la
+                </p>
+               </div>
+               <div class="col-sm-4 col-md-4">
+                <img src="wrkimgs\tryimg3.jpg" alt="" class="responsive-image ig">
+                <p>
+                 ommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est la
+                </p>
+               </div>
+              </section>
+      </main>
+      <footer class="bg-dark text-white pt-5 pb-4">
+               <div class="container text-center  text-md-left">
+                 <div class="row  text-md-left">
+                   <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img src="C:\nsbmb\wrkimgs\nsbmb-logo-300x298.png" alt="logo" style="width:40px;">
+                    <p> Nigerian Society Of Biochemistry and Molecular Biology</p>
+                    <hr class="" style="width:40px">
+                    <p>
+                      ommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est la
+                     </p>
+                   </div>
+                   <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                     <h5 class="text-uppercase mb-4 font-weight-bold">Directory</h5>
+                     <p>
+                       <a href="#" class="text-white" style="text-decoration:none;">Alumini</a>
+                     </p>
+                     <p>
+                      <a href="#" class="text-white" style="text-decoration:none;">Communique</a>
+                    </p>
+                    <p>
+                      <a href="#" class="text-white" style="text-decoration:none;">Resources</a>
+                    </p>
+                    <p>
+                      <a href="#" class="text-white" style="text-decoration:none;">Catalogs</a>
+                    </p>
+                   </div>
+                   <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                    <p>
+                      <i class="fas fa-home mr-3"></i>52 Ula-Okobo Street Ahoada
+                    </p>
+                   <p>
+                    <i class="fas fa-envelope mr-3"></i>Oilmaniailoma@gmail.com
+                  </p>
+                 <p>
+                  <i class="fas fa-phone mr-3"></i>+234803468677
+                </p>
+             </div>
+                 </div>
+               </div>
+      </footer>
          <link rel="stylesheet" type="text/css" href="wrks.css">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">         <script type="text/javascript" src="wrks.js"></script>
     </body>
