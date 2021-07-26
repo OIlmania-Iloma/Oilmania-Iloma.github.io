@@ -158,6 +158,14 @@ a{
       height: auto;
    
 }
+#icon{
+    
+}
+#datecover{
+    background: hsla(39, 80%, 60%);
+    border-radius:20px;
+   
+}
 #values > h3{
     border-bottom:3px solid orange;
 }
@@ -174,35 +182,50 @@ border: 2px inset rgb(255, 177, 32)
 .ig{
     float:left;
 	margin-right:5px;
-	height:170px;
-    width:190px;
+	height:auto;
+    width:50%;
+}
+nav{
+    background:hsla(39, 80%, 60%);
+}
+footer{
+    background:hsla(39, 80%, 60%);
+}
+body > P{
+    color: hsl(0, 60%, 0%);
+}
+li > a{
+    color: hsl(0, 60%, 0%);
 }
 .cc{
-    border-top:5px solid orange;
+    border-top:5px solid hsla(39, 80%, 60%);
 }
 .news-sec >h2, #dt{
-    border-bottom:3px solid orange;
+    border-bottom:3px solid hsl(39, 100%, 50%);
     border-bottom-width:thin;
 
 }
-  #vision{background-image: url("C:/nsbmb/wrkimgs/vision2.jpg");
+  #vision{background-image: url("wrkimgs/vision2.jpg");
         background-size:auto;
         background-repeat:no-repeat;
         background-position:center;
 }
 h1, h2, h3, h4{
-    border-bottom:2px solid orange;
+    /*border-bottom:2px solid orange;*/
     border-bottom-width:thin;
+    background: hsla(39, 80%, 60%);
 }
-
+.block{
+    display: block;
+}
 #mission{
-    background-image: url("C:/nsbmb/wrkimgs/mission.jpg");
+    background-image: url("wrkimgs/mission.jpg");
     background-size:auto;
     background-repeat:no-repeat;
     background-position:center;
     /* opacity: 0.5; */
 }
-#values{background-image: url("C:/nsbmb/wrkimgs/values.jpg");
+#values{background-image: url("wrkimgs/values.jpg");
     background-size:auto;
     background-repeat:no-repeat;
     background-position:center;
