@@ -8,7 +8,7 @@ body{
 nav{
     
 }
-a{
+a
     /* font-size: 0.5em; */
     /* text-decoration: none; 
     color: cornflowerblue;
@@ -162,22 +162,22 @@ a{
     
 }
 #datecover{
-    background: hsla(39, 80%, 60%);
+    background: cornflowerblue;;
     border-radius:20px;
    
 }
 #values > h3{
-    border-bottom:3px solid orange;
+    border-bottom:3px solid cornflowerblue;;
 }
 #mission > h3{
-    border-bottom:3px solid orange;
+    border-bottom:3px solid cornflowerblue;;
 }
 #vision > h3 {
-    border-bottom:3px solid orange;
+    border-bottom:3px solid cornflowerblue;;
     border-radius:10px;
 }
 #mm{
-border: 2px inset rgb(255, 177, 32)
+border: 2px inset cornflowerblue;
 }
 .ig{
     float:left;
@@ -186,10 +186,10 @@ border: 2px inset rgb(255, 177, 32)
     width:50%;
 }
 nav{
-    background:hsla(39, 80%, 60%);
+    background:cornflowerblue;
 }
 footer{
-    background:hsla(39, 80%, 60%);
+    background:cornflowerblue;;
 }
 body > P{
     color: hsl(0, 60%, 0%);
@@ -198,14 +198,14 @@ li > a{
     color: hsl(0, 60%, 0%);
 }
 .cc{
-    border-top:5px solid hsla(39, 80%, 60%);
+    border-top:5px solid cornflowerblue;;
 }
-.news-sec >h2, #dt{
+/*.news-sec >h2, #dt{
     border-bottom:3px solid hsl(39, 100%, 50%);
     border-bottom-width:thin;
 
-}
-  #vision{background-image: url("wrkimgs/vision2.jpg");
+}*/
+  #vision{background-image: url("wrkimgs/vision3.jpg");
         background-size:auto;
         background-repeat:no-repeat;
         background-position:center;
@@ -213,19 +213,23 @@ li > a{
 h1, h2, h3, h4{
     /*border-bottom:2px solid orange;*/
     border-bottom-width:thin;
-    background: hsla(39, 80%, 60%);
+    background: cornflowerblue;;
+}
+.learnMore{
+    color:cornflowerblue;
+    border-radius:25px solid cornflowerblue;
 }
 .block{
     display: block;
 }
 #mission{
-    background-image: url("wrkimgs/mission.jpg");
+    background-image: url("wrkimgs/mission3.jpg");
     background-size:auto;
     background-repeat:no-repeat;
     background-position:center;
     /* opacity: 0.5; */
 }
-#values{background-image: url("wrkimgs/values.jpg");
+#values{background-image: url("wrkimgs/values 3.jpg");
     background-size:auto;
     background-repeat:no-repeat;
     background-position:center;
