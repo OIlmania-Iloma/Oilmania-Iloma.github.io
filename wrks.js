@@ -63,6 +63,19 @@ for (let i = 0; i <newsA.length; i++) {
     const element = newsA[i];
     element.classList.add('text-dark');
 }
+let show = document.querySelector("#show");
+let uii = () => {
+	setTimeout(function (){
+		show.innerHTML = "<img src='C:/nsbmb/wrkimgs/img3.jpg'  width='100%'; height='auto'>";
+	},2500);
+	setTimeout(function (){
+		show.innerHTML = "<img src='wrkimgs/img5.png'  width='100%'; height='auto'>";
+	},5000);
+	setTimeout(function (){
+		show.innerHTML = "<img src='C:/nsbmb/wrkimgs/excos.jpg'  width='100%'; height='auto'>";
+	},7500);
+};
+setInterval(uii,9000);
  
 
 
