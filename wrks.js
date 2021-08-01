@@ -51,7 +51,7 @@ let rwd = document.querySelectorAll("#rwdc");
     for (i=0; i < rwd.length; i++){
         rwd[i].addEventListener('mouseover', chng, true);
     }
- }*/
+ }
  let main = document.querySelectorAll('#icon');
  for (let i = 0; i <main.length; i++) {
      const element = main[i];
@@ -66,34 +66,60 @@ for (let i = 0; i <newsA.length; i++) {
 let show = document.querySelector("#show");
 let uii = () => {
 	setTimeout(function (){
-		show.innerHTML = "<img src='C:/nsbmb/wrkimgs/img3.jpg'  width='100%'; height='auto'>";
+		show.innerHTML = "<img src='wrkimgs/img3.jpg'  width='100%'; height='auto'>";
 	},2500);
 	setTimeout(function (){
 		show.innerHTML = "<img src='wrkimgs/img5.png'  width='100%'; height='auto'>";
 	},5000);
 	setTimeout(function (){
-		show.innerHTML = "<img src='C:/nsbmb/wrkimgs/excos.jpg'  width='100%'; height='auto'>";
+		show.innerHTML = "<img src=/wrkimgs/excos.jpg'  width='100%'; height='auto'>";
 	},7500);
 };
-setInterval(uii,9000);
- 
+setInterval(uii,2000);
+ let image = document.getElementById("show");
+ let images = ["/wrkimgs/excos.jpg", "wrkimgs/img5.png", "wrkimgs/img3.jpg"];
+ setInterval(function (){
+     let random = Math.floor(Math.random()*3)
+     image.src=images[random]
+ }, 800)
+console.log(image)
+let images = ["/wrkimgs/excos.jpg", "wrkimgs/img5.png", "wrkimgs/img3.jpg"];
+setInterval(function(){
+    show.src ="/wrkimgs/img3.jpg"
 
+}, 2000)
 
+let images = document.getElementsByClassName("x");
+for (let i = 0; i < images.length; i++) {
+    images[i].style.opacity=1;  
+};
+let top = 1;
+currentImage = images.length - 1;
+setInterval(changeImage, 3000)
 
+async function changeImage(){
+    let nextImage = (1 + currentImage) % images.length; //=== 1
+    currentImage.style.zindex = top+1;
+    nextImage.style.zindex = top;
+    await Transition();
+    images[currentImage].style.zindex = top;
+    images[nextImage].style.zindex = top + 1;
+    top = top + 1;
+    currentImage.style.opacity = 1;
+    currentImage = nextImage;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function Transition () {
+    return new Promise (function (resolve, reject) {
+        let delay = 0.01;
+        let id = setInterval(changeOpacity, 10);
+        function changeOpacity (){
+            images[currentImage].style.opacity -= delay;
+            if(images[currentImage].style.opacity <=0){
+                clearInterval(id);
+                resolve();
+            }
+        }
+    })
+}
+*/
