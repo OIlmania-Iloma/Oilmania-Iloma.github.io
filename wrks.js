@@ -1,3 +1,19 @@
+
+let padP = document.querySelectorAll("p");
+padP.classlist.add("p-3")
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*const menu = document.querySelector('.menu');
 const toggle = document.querySelector('.toggle')
 let toggleMenu = () => {
