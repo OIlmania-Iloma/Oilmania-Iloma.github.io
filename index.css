@@ -1,0 +1,115 @@
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+ .main-nav {
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+  align-items: center;
+  color: #daf8e3;
+  background: #000;
+  visibility: hidden;
+}
+.logo {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  padding: 0 2rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+.burger {
+  display: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.line {
+  height: 2px;
+  width: 35px;
+  margin: 0.5rem 0;
+  background: #daf8e3;
+  transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+
+.main-nav.show .line1 {
+  transform: translate(-10px) rotate(45deg) translate(15px);
+}
+.main-nav.show .line2 {
+  opacity: 0;
+}
+.main-nav.show .line3 {
+  transform: translate(-10px) rotate(-45deg) translate(15px);
+}
+.main-nav.show .nav-links {
+  transform: translateX(0%);
+}
+
+  .nav-links {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    height:30vh;
+    width:20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+#clock {
+	width:270px;
+	height:270px;
+	border-radius:30%;
+	background-color: lightgrey;
+	margin: auto;
+}
+
+span {
+	display: block;
+	width: 100%;
+	margin: auto;
+	padding-top: 60px;
+	text-align: center;
+	font-size: 150px;
+}
+
+a, p{
+	font-size:calc(1rem + 2vw);
+}
+.tech{
+  margin: 2%;
+  font-size:calc(2rem + 2vw);
+}
+.button-div{
+	visibility:hidden;
+}
+@media screen and (max-width: 800px) {
+  .nav-links {
+    width:30%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav-links {
+    width:30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .burger {
+    display: block;
+  }
+}
