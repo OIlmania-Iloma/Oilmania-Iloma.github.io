@@ -1,0 +1,14 @@
+@import url(C:/TMP/index.scss);
+
+.container{
+    display: grid;
+    grid-gap: 20px;
+    .nav {
+        ul{
+        display: grid;
+        grid-gap:20px;
+        grid-template-columns: repeat(5, 1fr);
+        list-style-type: none;
+        }
+    }
+}
