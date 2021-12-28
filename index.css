@@ -8,41 +8,51 @@
  * production code, beware of the browser
  * prefixes.
  */
+body{
+  background: url(pexels-tranmautritam-326503.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+p{
+ 
+  /*font-size: calc(1.5vw + 1.5vh);*/
+}
 
- .main-nav {
-  display: flex;
-  height: 8vh;
-  justify-content: space-between;
-  align-items: center;
-  color: #daf8e3;
-  background: #000;
-  visibility: hidden;
+ul{
+  display: grid;
+  grid-gap:10px;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  
 }
 .logo {
-  letter-spacing: 3px;
   text-transform: uppercase;
   font-size: 1.25rem;
   padding: 0 2rem;
+  color:rgba(43, 44, 170);
+
+
 }
-.nav-links {
-  list-style: none;
-  display: flex;
-  width: 40%;
-  justify-content: space-around;
-}
+
 .burger {
   display: none;
   padding: 0.5rem;
   cursor: pointer;
+  color:rgba(43, 44, 170);
+
 }
 .line {
   height: 2px;
   width: 35px;
   margin: 0.5rem 0;
-  background: #daf8e3;
+  background: rgba(43, 44, 170);;
   transition: transform 0.75s ease, opacity 0.75s ease;
-}
 
+}
+.card{
+  padding:1.5rem;
+}
 
 .main-nav.show .line1 {
   transform: translate(-10px) rotate(45deg) translate(15px);
@@ -56,56 +66,57 @@
 .main-nav.show .nav-links {
   transform: translateX(0%);
 }
+#portfolio{
+  display: grid;
+  grid-gap:20px;
+  grid-template-areas:
+  'nv     nv'
+  'card   '
+  'info   info'
 
-  .nav-links {
-    position: fixed;
-    top: 8vh;
-    right: 0;
-    height:30vh;
-    width:20%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 1s ease;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-  }
+}
+ 
 
 #clock {
-	width:270px;
-	height:270px;
-	border-radius:30%;
-	background-color: lightgrey;
-	margin: auto;
+  text-align: center;
+  background-color: gainsboro;
+  max-width: 40rem;
+}
+.clock{
+  text-align: center;
 }
 
 span {
 	display: block;
 	width: 100%;
 	margin: auto;
-	padding-top: 60px;
+	padding-top: 30px;
 	text-align: center;
-	font-size: 150px;
+	font-size:calc(1.5rem + 4vw);
+  color:rgba(43, 44, 170);
+  background-color: gainsboro;
 }
 
-a, p{
+a, p, h2{
 	font-size:calc(1rem + 2vw);
+  color:rgba(43, 44, 170);
 }
 .tech{
   margin: 2%;
   font-size:calc(2rem + 2vw);
 }
 .button-div{
-	visibility:hidden;
+	visibility:visible;
 }
-@media screen and (max-width: 800px) {
+.p{
+  background-color: gainsboro;
+  padding: 1.4rem;
+}
+/*@media screen and (max-width: 800px) {
   .nav-links {
     width:30%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .nav-links {
-    width:30%;
+    display: inline;
+    padding:10px;
   }
 }
 @media screen and (max-width: 600px) {
